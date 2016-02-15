@@ -1,4 +1,4 @@
- <?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <widget xmlns = "http://www.w3.org/ns/widgets"
 	xmlns:gap = "http://phonegap.com/ns/1.0"
 	id        = "in.tamil.peyar"
@@ -9,13 +9,14 @@
 Tamil Peyar</description>
 <author href="poogel77.com" 
 email="poogel77@yahoo.com">
-Poogelenthiran Shunmugam
+Poogelenthiran
 </author>
-<icon src="icon.png" />	
 	
 	<!-- Define app icon MAIN ROOT Platform. -->
-	
- <!--
+
+<icon src="icon.png" />		
+
+    <!--
         Enable individual API permissions here.
         The "device" permission is required for the 'deviceready' event.
     -->
@@ -27,7 +28,8 @@ Poogelenthiran Shunmugam
         permission on your app, which PhoneGap requires.
     -->
     <preference name="permissions"  value="none"/>
-	   <!-- Customize your app and platform with the preference element. -->
+
+      <!-- Customize your app and platform with the preference element. -->
     <preference name="phonegap-version"           value="cli-5.2.0" />          <!-- all: current version of PhoneGap -->
     <preference name="orientation"                value="default" />        <!-- all: default means both landscape and portrait are enabled -->
     <preference name="target-device"              value="universal" />      <!-- all: possible values handset, tablet, or universal -->
@@ -45,10 +47,11 @@ Poogelenthiran Shunmugam
     <preference name="disable-cursor"             value="false" />          <!-- blackberry: prevents a mouse-icon/cursor from being displayed on the app -->
     <preference name="android-minSdkVersion"      value="16" />              <!-- android: MIN SDK version supported on the target device. MAX version is blank by default. -->
     <preference name="android-installLocation"    value="auto" />           <!-- android: app install location. 'auto' will choose. 'internalOnly' is device memory. 'preferExternal' is SDCard. -->
+
 <!-- Plugins -->
 
     <!-- Core plugins -->
-   <plugin name="org.apache.cordova.splashscreen" spec="1.0.0" source="pgb" />
+    <plugin name="org.apache.cordova.splashscreen" spec="1.0.0" source="pgb" />
 
 
     <!--
@@ -57,10 +60,10 @@ Poogelenthiran Shunmugam
     -->
 
     <!-- Define app icon for each platform. -->
-    <icon src="res/icon/android/icon-36-ldpi.png"   gap:platform="android"    gap:qualifier="ldpi" />
-    <icon src="res/icon/android/icon-48-mdpi.png"   gap:platform="android"    gap:qualifier="mdpi" />
-    <icon src="res/icon/android/icon-72-hdpi.png"   gap:platform="android"    gap:qualifier="hdpi" />
-    <icon src="res/icon/android/icon-96-xhdpi.png"  gap:platform="android"    gap:qualifier="xhdpi" />
+    <icon src="res/icon/android/icon-36-ldpi.png"   gap:platform="android"    gap:density="ldpi" />
+    <icon src="res/icon/android/icon-48-mdpi.png"   gap:platform="android"    gap:density="mdpi" />
+    <icon src="res/icon/android/icon-72-hdpi.png"   gap:platform="android"    gap:density="hdpi" />
+    <icon src="res/icon/android/icon-96-xhdpi.png"  gap:platform="android"    gap:density="xhdpi" />
     <icon src="res/icon/ios/icon-57.png"            gap:platform="ios"        width="57" height="57" />
     <icon src="res/icon/ios/icon-72.png"            gap:platform="ios"        width="72" height="72" />
     <icon src="res/icon/ios/icon-57-2x.png"         gap:platform="ios"        width="114" height="114" />
@@ -77,6 +80,7 @@ Poogelenthiran Shunmugam
 <gap:splash src="res/screen/ios/screen-iphone-portrait-2x.png" gap:platform="ios"     width="640" height="960" />
 <gap:splash src="res/screen/ios/screen-ipad-portrait.png"      gap:platform="ios"     width="768" height="1024" />
 <gap:splash src="res/screen/ios/screen-ipad-landscape.png"     gap:platform="ios"     width="1024" height="768" />
+	
 	<preference name="android-build-tool" value="gradle" /> 
     <gap:plugin name="cordova-plugin-admobpro" source="npm" />
     <framework src="com.google.android.gms:play-services-ads:+" />
